@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <RootNamespace>DMG.ProviderInvoicing.Logging</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Include="Logger.fs" />
+    </ItemGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="DMG.K8S.Framework.DotNet.Common" Version="3.0.0-pre.8" />
+		<PackageReference Update="FSharp.Core" Version="8.0.101" />
+	</ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DMG.ProviderInvoicing.IO.Host.FS\DMG.ProviderInvoicing.IO.Host.FS.fsproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Serilog" Version="2.12.0" />
+    </ItemGroup>
+
+</Project>

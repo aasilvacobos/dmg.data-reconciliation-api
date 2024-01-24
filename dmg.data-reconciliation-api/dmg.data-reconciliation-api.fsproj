@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>dmg.data_reconciliation_api</RootNamespace>
+		<OutputType>Exe</OutputType>
+	</PropertyGroup>
+
+	<ItemGroup />
+
+	<ItemGroup>
+		<!--<ProjectReference Include="..\..\..\..\dmg.provider.common-utils\KafkaLib\KafkaLib.fsproj" />-->
+		<ProjectReference Include="..\DMG.ProviderInvoicing.IO.ProviderBilling.Database.Reader\DMG.ProviderInvoicing.IO.ProviderBilling.Database.Reader.csproj" />
+		<ProjectReference Include="..\KafkaLib\KafkaLib.fsproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DMG.Utilities.DotNet.Proto" Version="3.0.0-pre.1477" />
+		<PackageReference Include="FsToolkit.ErrorHandling.TaskResult" Version="4.13.0" />
+		<PackageReference Include="ShellProgressBar" Version="5.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="appsettings.Development.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<DependentUpon>appsettings.json</DependentUpon>
+		</None>
+		<None Include="appsettings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<Compile Include="Program.fs" />
+		<None Include="appsettings.Production.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<DependentUpon>appsettings.json</DependentUpon>
+		</None>
+		<None Include="appsettings.Sandbox.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<DependentUpon>appsettings.json</DependentUpon>
+		</None>
+		<None Include="appsettings.Staging.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<DependentUpon>appsettings.json</DependentUpon>
+		</None>
+		<None Include="appsettings.Test.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<DependentUpon>appsettings.json</DependentUpon>
+		</None>
+		<None Include="appsettings.TestOnLocal.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<DependentUpon>appsettings.json</DependentUpon>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Update="FSharp.Core" Version="8.0.101" />
+	</ItemGroup>
+
+</Project>

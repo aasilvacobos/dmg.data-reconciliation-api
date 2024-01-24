@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>DMG.ProviderInvoicing.DT.Service</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DMG.Utilities.DotNet.Proto" Version="3.0.0-pre.1432" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DMG.ProviderInvoicing.DT.Domain.FS\DMG.ProviderInvoicing.DT.Domain.FS.fsproj" />
+      <ProjectReference Include="..\DMG.ProviderInvoicing.DT.Domain\DMG.ProviderInvoicing.DT.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

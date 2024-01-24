@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DMG.ProviderInvoicing.BL.Utility\DMG.ProviderInvoicing.BL.Utility.csproj" />
+		<ProjectReference Include="..\DMG.ProviderInvoicing.DT.Domain.FS\DMG.ProviderInvoicing.DT.Domain.FS.fsproj" />
+		<ProjectReference Include="..\DMG.ProviderInvoicing.DT.Service\DMG.ProviderInvoicing.DT.Service.csproj" />
+		<ProjectReference Include="..\DMG.ProviderInvoicing.IO.Host.FS\DMG.ProviderInvoicing.IO.Host.FS.fsproj" />
+		<ProjectReference Include="..\DMG.ProviderInvoicing.IO.Logging.FS\DMG.ProviderInvoicing.IO.Logging.FS.fsproj" />
+		<ProjectReference Include="..\DMG.ProviderInvoicing.IO.Utility\DMG.ProviderInvoicing.IO.Utility.csproj" />
+	</ItemGroup>
+
+</Project>

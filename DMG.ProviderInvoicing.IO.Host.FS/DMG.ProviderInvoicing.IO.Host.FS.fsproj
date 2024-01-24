@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Nullable>enable</Nullable>
+        <RootNamespace>DMG.ProviderInvoicing.IO.Host</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Coderz.Kubernetes.Extensions" Version="1.3.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="6.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
+      <PackageReference Include="System.Text.Encoding.Extensions" Version="4.3.0" />
+      <PackageReference Update="FSharp.Core" Version="8.0.101" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="CacheIO.fs" />
+      <Compile Include="EnvironmenVariable.fs" />
+      <Compile Include="HostConfiguration.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DMG.ProviderInvoicing.BL.Utility.FS.Test\DMG.ProviderInvoicing.BL.Utility.FS.Test.fsproj" />
+      <ProjectReference Include="..\DMG.ProviderInvoicing.DT.Service.FS\DMG.ProviderInvoicing.DT.Service.FS.fsproj" />
+    </ItemGroup>
+
+</Project>

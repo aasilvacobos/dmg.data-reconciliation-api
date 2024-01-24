@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="MessageUtil.fs" />
+        <Compile Include="Instance.fs" />
+        <Compile Include="HostSetting.fs" />
+        <Compile Include="HostService.fs" />
+        <Compile Include="SorConcentratorConfiguration.fs" />
+        <Compile Include="LoggingConfiguration.fs" />
+        <Compile Include="JobBillingWriterConfiguration.fs" />
+        <Compile Include="InvoiceBuilderConfiguration.fs" />
+        <Compile Include="InvoiceApproverConfiguration.fs" />
+        <Compile Include="WorkBillingConsumerConfiguration.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DMG.ProviderInvoicing.BL.Utility.FS\DMG.ProviderInvoicing.BL.Utility.FS.fsproj" />
+      <ProjectReference Include="..\DMG.ProviderInvoicing.DT.Domain\DMG.ProviderInvoicing.DT.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="FSharp.Core" Version="7.0.200" />
+    </ItemGroup>
+
+</Project>

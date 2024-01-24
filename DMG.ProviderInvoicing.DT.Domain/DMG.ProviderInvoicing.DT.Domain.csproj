@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>DMG.ProviderInvoicing.DT.Domain</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DMG.ProviderInvoicing.BL.Utility\DMG.ProviderInvoicing.BL.Utility.csproj" />
+      <ProjectReference Include="..\DMG.ProviderInvoicing.DT.Domain.FS\DMG.ProviderInvoicing.DT.Domain.FS.fsproj" />
+    </ItemGroup>
+
+</Project>
