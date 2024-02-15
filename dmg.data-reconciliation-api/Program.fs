@@ -1,9 +1,7 @@
-﻿module Recon
+﻿module ReconLibrary 
 
-open Dmg.Work.Commons.V1
 open KafkaLib
 open System
-open Uuid
 open FsToolkit.ErrorHandling
 
 // Uncomment one of these to select an environment
@@ -314,3 +312,13 @@ let compareVisits() =
     writer.Flush()
 
 compareVisits()
+
+
+//namespace DMG.DataReconciliation
+//    let loadAsyncProviderBilling = ProviderBillingProjection.loadAsync
+//    let getAllLinesProviderBilling = ProviderBillingProjection.getAllLines
+
+//    let parseIdVisit = Visit.parseId
+//    let parseIdProviderBillingState = ProviderBillingState.parseId
+//    let calculateAmountProviderBillingState = ProviderBillingState.calculateAmount
+//    let isVerifiedProviderBillingState = ProviderBillingState.isVerified

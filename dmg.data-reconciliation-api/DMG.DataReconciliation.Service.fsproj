@@ -3,10 +3,8 @@
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
 		<RootNamespace>dmg.data_reconciliation_api</RootNamespace>
-		<OutputType>Exe</OutputType>
+		<OutputType>Library</OutputType>
 	</PropertyGroup>
-
-	<ItemGroup />
 
 	<ItemGroup>
 		<!--<ProjectReference Include="..\..\..\..\dmg.provider.common-utils\KafkaLib\KafkaLib.fsproj" />-->

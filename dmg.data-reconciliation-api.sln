@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "dmg.data-reconciliation-api", "dmg.data-reconciliation-api\dmg.data-reconciliation-api.fsproj", "{43A15B55-FE73-4CE5-AA5B-D8312B12769D}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "DMG.DataReconciliation.Service", "dmg.data-reconciliation-api\DMG.DataReconciliation.Service.fsproj", "{43A15B55-FE73-4CE5-AA5B-D8312B12769D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DMG.ProviderInvoicing.IO.ProviderBilling.Database.Reader", "DMG.ProviderInvoicing.IO.ProviderBilling.Database.Reader\DMG.ProviderInvoicing.IO.ProviderBilling.Database.Reader.csproj", "{AC9BC0AB-7723-49EF-BDCC-BA5C154616D4}"
 EndProject
@@ -34,6 +34,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DMG.ProviderInvoicing.IO.Utility", "DMG.ProviderInvoicing.IO.Utility\DMG.ProviderInvoicing.IO.Utility.csproj", "{4F9EE42D-F6E9-427A-9A28-77BE62A5F8C5}"
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "KafkaLib", "KafkaLib\KafkaLib.fsproj", "{BD4B5865-E98F-4C41-9742-D1C02CF9EBD6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DMG.DataReconciliation-api", "DMG.DataReconciliation-api\DMG.DataReconciliation-api.csproj", "{4C393D4D-A78D-4529-A261-7D14D1C2E9E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,10 @@ Global
 		{BD4B5865-E98F-4C41-9742-D1C02CF9EBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD4B5865-E98F-4C41-9742-D1C02CF9EBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD4B5865-E98F-4C41-9742-D1C02CF9EBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C393D4D-A78D-4529-A261-7D14D1C2E9E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C393D4D-A78D-4529-A261-7D14D1C2E9E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C393D4D-A78D-4529-A261-7D14D1C2E9E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C393D4D-A78D-4529-A261-7D14D1C2E9E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
